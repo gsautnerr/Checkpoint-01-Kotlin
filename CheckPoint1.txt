@@ -1,0 +1,44 @@
+AndroidManifest.xml
+
+// Activity da MainActivity é a principal activity de uma aplicação. Uma activity representa cada tela de interface com o usuário.
+
+
+======================================================
+
+MainActivity.kt
+
+//Aqui foi declarada a MainActivity (Activity Principal). Nesse caso ela está herdando os métodos da super classe Activity,
+// classe que possui os principais métodos para o funcionamento da aplicação.
+// Na classe Main Activity tambem encontram-se o metodo onCreate(), tendo o override fun onCreate(savedInstanceSatate: Bundle?),
+// que é um metodo chamado ao ser criado uma activity, sendo um metodo de ciclo de vida de uma activiy.
+// Temos tambem o super.onCreate(savedInstanceState), responsavel pela chamada do onCreate() da classe ComponentActivity,
+// que garante a activity inicia com o comportamento padrão antes de qualquer customização.
+
+// O Bundle é uma classe que nos permite salvar e transmitir dados entre componentes, possibilitando tambem a
+// preservação de estados e contextos, com ela Melhorando a jornada do usúario conseguir voltar de onde parou
+
+
+======================================================
+Produto.kt
+
+// Classe criada com os atributos de produtos
+
+======================================================
+Package layout
+
+produto_item xml
+<!--
+    TextView é um componente que nos permite exibir um texto na interface do usúario
+-->
+
+activity_main xml
+<!--
+   O RecyclerView é um componente  para exibir listas grandes e roláveis de itens de maneira otimizada.
+   Ele gerencia a criação e a reciclagem de views, resultando em melhor desempenho e
+   experiência do usuário.-->
+======================================================
+
+ListaProdutosAdapter
+
+//O adapter é um componente do RecyclerView que conecta seus dados à visualização da lista.
+// Ele é responsável por criar viewHolder, associar dados e determinar o tamanho da lista
